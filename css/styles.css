@@ -1,0 +1,184 @@
+/* Aucune modification du CSS n'est nécessaire pour valider l'exercice ! Bonne chance ! */
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&display=swap');
+body {
+  background-color: #f39c12;
+  font-family: 'Marhey', sans-serif;
+  font-weight: 400;
+}
+
+#app {
+  display: flex;
+}
+
+#player {
+  background-color: #f39c12;
+  position: relative;
+}
+
+#dealer {
+  background-color: #e67e22;
+  position: relative
+}
+
+.board {
+  min-height: 100vh;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.dice {
+  background-image: url('../images/dice-sprite.png');
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+}
+
+.absolutBox {
+  position: absolute;
+  height: 11rem;
+  width: 30rem;
+  background-color: rgb(192, 82, 54);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem 0.1rem rgba(20, 20, 20, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.absolutBox h1 {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.absolutBox p{
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.yes-button{
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  animation: all 1s ease-in-out;
+  
+}
+
+.yes-button:hover{
+  background-color: #2ecc71;
+  animation: all 1s ease-in-out;
+}
+
+.no-button{
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  
+}
+
+.no-button:hover{
+  background-color: #cc2e2e;
+  animation: all 1s ease-in-out;
+}
+
+.score-title{
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.winner {
+  font-size: 3rem;
+  font-family: 'Marhey', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(241, 15, 15);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.egal {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Marhey', sans-serif;
+  font-weight: bold;
+  color: rgb(51, 116, 160);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.restart-btn{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f39c12;
+  color: white;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  animation: all 1s ease-in-out;
+}
+
+.player-title{
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score-div{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
